@@ -7,3 +7,8 @@ def descomponer():
     ca=cadena.split(separador)
     lista=[]
 
+    for i in range(0, len(ca)):
+        lista.append(list(ca[i:i+1]))
+
+    table=lista
+    headers=["Numero", "Cadena"]
