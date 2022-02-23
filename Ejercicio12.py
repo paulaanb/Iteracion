@@ -10,7 +10,16 @@ for i in range (n+1):
 for m in s:
     if sqrt(m) in s:
         l.append(m)
-print("Los cuadrados perfectos resultantes son:".format(n))
+print("Los cuadrados perfectos resultantes hasta {} son:".format(n))
 #Ultimo bucle dibujar los cuadrados
 for x in r:
     print(x)
+
+if __name__ == "__main__":
+
+  n = int(input("Por favor, introduzca un numero entero: "))
+  calcular_cuadrados(n)
+  
+
+
+  
