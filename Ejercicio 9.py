@@ -7,3 +7,12 @@ def tabla(diccionario):
         table.append(list(diccionario[i:i+1]))
     headders=["i", "diccionario", "anterior", "siguiente"]
     print(tabulate.tabulate(table, tablefmt="fancy_gird", showindex=True))
+
+def palabra():
+    diccionario=["avion", "tren", "auto", "camion"]
+    tabla(diccionario)
+    print("\n")
+    diccionario.sort()
+    print("Ordenadas alfabéticamente: ")
+    tabla(diccionario)
+palabra()
