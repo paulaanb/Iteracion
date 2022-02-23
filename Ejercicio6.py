@@ -29,3 +29,8 @@ if operacion == "retirar":
         saldo = saldo * (-1)
         print("Al retirar la cantidad de " , retirar_dinero ,". Su saldo ha entrado en numeros rojos, por lo que debe una cantidad de  " , saldo , "€")
 
+suma= 10
+if sum(operacion) > suma: 
+  print("La media del importe de los movimientos es superior al mínimo solicitado")
+else:
+  print("La media del importe de los movimientos es inferior al mínimo solicitado")
