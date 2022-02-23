@@ -12,3 +12,4 @@ def descomponer():
 
     table=lista
     headers=["Numero", "Cadena"]
+    print(tabulate.tabulate(table, headers, tablefmt = "fancy_grid", showindex = True))
