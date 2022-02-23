@@ -1,4 +1,4 @@
-#Ejercicio 8: Análisis de una cadena de caracteres
+#Ejercicio 8: Análisis de una cadena de carácteres
 
 import tabulate
 def descomponer():
