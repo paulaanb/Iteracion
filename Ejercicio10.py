@@ -37,12 +37,7 @@ inicialización
 
 	afirmación
 		i > MIN y j > MIN_EDADES =>
-		Las celdas de sub_tabla(Resultado, MIN_EDADES, j-1)
-		se inicializan con los identificadores de las celdas 
-		de sub_tabla(familias, MIN, i-1) donde los
-		identificadores no son ni BORRADO ni VACIO y la edad
-		está entre `edad_min' y `edad_max'
-
+	
 realización
 	hasta que
 		familias[i].identificador = VACIO
@@ -67,8 +62,7 @@ realización
 	fin repetir
 
 postcondición
-	# Resultado está VACIO cuando los límites de edades no están en
-	# orden
+	# Resultado está VACIO cuando los límites de edades no están en orden
 	edad_min > edad_max => Resultado[1] = VACIO
 
 	(∀k ∈ ℤ)(
